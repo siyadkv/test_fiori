@@ -1,0 +1,43 @@
+{
+    "plugins": [
+        "fiori-custom"
+    ],
+    "overrides": [
+        {
+            "files": [
+                "**/*.*"
+            ],
+            "excludedFiles": [
+                "test/**",
+                "src/test/**",
+                "target/**",
+                "webapp/test/**",
+                "src/main/webapp/test/**",
+                "webapp/localservice/**",
+                "src/main/webapp/localService/**",
+                "backup/**",
+                "Gruntfile.js",
+                "changes_preview.js",
+                "gulpfile.js"
+            ],
+            "plugins": [
+                "fiori-custom"
+            ],
+            "extends": [
+                "eslint:recommended",
+                "plugin:fiori-custom/fioriToolsDefault"
+            ]
+        },
+        {
+            "files": [
+                "webapp/test/**"
+            ],
+            "plugins": [
+                "fiori-custom"
+            ],
+            "extends": [
+                "plugin:fiori-custom/fioriToolsTestcode"
+            ]
+        }
+    ]
+}

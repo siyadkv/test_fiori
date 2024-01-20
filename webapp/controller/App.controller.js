@@ -7,7 +7,7 @@ sap.ui.define(
   
       return BaseController.extend("project1.controller.App", {
         onInit: function() {
-        
+           var gt="https://goof=gle.com"
         }
       });
     }
