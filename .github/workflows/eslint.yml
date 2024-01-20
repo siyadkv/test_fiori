@@ -29,13 +29,15 @@ jobs:
 
       - name: Install ESLint
         run: |
-          npm install eslint@8.10.0
+          npm install eslint@8.32.0
+          npm install babel-eslint
+          npm install eslint-plugin-fiori-custom@2.6.7
           npm install @microsoft/eslint-formatter-sarif@2.1.7
 
       - name: Run ESLint
         run: npx eslint .
           --config .eslintrc
-          --ext .js,.jsx,.ts,.tsx
+          --ext .js,.jsx,.ts,.tsx webapp/
           --format @microsoft/eslint-formatter-sarif
           --output-file eslint-results.sarif
         continue-on-error: false
