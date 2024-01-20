@@ -26,5 +26,4 @@ jobs:
         cache: 'npm'
     - run: npm install @ui5/cli
     - run: npm install @sap/ux-ui5-tooling
-    - run: npm build
-    - run: npm deploy
+    - run: npm run build
